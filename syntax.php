@@ -15,20 +15,6 @@ require_once(DOKU_PLUGIN.'syntax.php');
  */
 class syntax_plugin_meta extends DokuWiki_Syntax_Plugin {
 
-    /**
-     * return some info
-     */
-    function getInfo() {
-        return array(
-                'author' => 'Esther Brunner',
-                'email'  => 'wikidesign@gmail.com',
-                'date'   => '2006-04-15',
-                'name'   => 'Meta Plugin',
-                'desc'   => 'Sets metadata for the current page',
-                'url'    => 'http://wiki.splitbrain.org/plugin:meta',
-                );
-    }
-
     function getType() { return 'substition'; }
     function getSort() { return 99; }
     function connectTo($mode) { $this->Lexer->addSpecialPattern('~~META:.*?~~',$mode,'plugin_meta');}
