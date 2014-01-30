@@ -1,0 +1,7 @@
+base   meta                
+author Esther Brunner
+email  wikidesign@gmail.com
+date   2006-04-15
+name   Meta Plugin
+desc   Sets metadata for the current page
+url    http://wiki.splitbrain.org/plugin:meta
